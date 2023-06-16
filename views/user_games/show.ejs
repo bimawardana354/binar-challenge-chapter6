@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Detail User Game</title>
+    <link rel="shortcut icon" href="index-assets/icon.ico" />
+
+    <!-- Link CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container justify-content-start mt-2">
+        <a href="/user_games" class="text-decoration-none"><h3 class="text-secondary">&lt;</h3></a>
+        <h5>Detail & Biodata User Game</h5>
+      </div>
+    </nav>
+
+    <div class="col-md-10 container-fluid justify-content-center">
+      <div class="row justify-content-center">
+        <div class="card border-dark mb-3 me-3" style="width: 34rem">
+          <div class="card-header">Detail User Game</div>
+          <div class="card-body">
+            <table>
+              <tr>
+                <td>ID</td>
+                <td>:</td>
+                <td><%= data.id %></td>
+              </tr>
+              <tr>
+                <td>Username</td>
+                <td>:</td>
+                <td><%= data.username %></td>
+              </tr>
+              <tr>
+                <td>Password</td>
+                <td>:</td>
+                <td><%= data.password %></td>
+              </tr>
+              <tr>
+                <td>Created At</td>
+                <td>:</td>
+                <td><%= data.createdAt %></td>
+              </tr>
+              <tr>
+                <td>Updated At</td>
+                <td>:</td>
+                <td><%= data.updatedAt %></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="card border-dark mb-3" style="width: 34rem">
+          <div class="card-header">Biodata User Game</div>
+          <div class="card-body">
+            <table>
+              <tr>
+                <td>ID</td>
+                <td>:</td>
+                <td><%= data.UserGameBiodatum.UserGameId %></td>
+              </tr>
+              <tr>
+                <td>Full Name</td>
+                <td>:</td>
+                <td><%= data.UserGameBiodatum.fullname %></td>
+              </tr>
+              <tr>
+                <td>City</td>
+                <td>:</td>
+                <td><%= data.UserGameBiodatum.city %></td>
+              </tr>
+              <tr>
+                <td>Birthday</td>
+                <td>:</td>
+                <td><%= data.UserGameBiodatum.birthday %></td>
+              </tr>
+              <tr>
+                <td>Gender</td>
+                <td>:</td>
+                <td><%= data.UserGameBiodatum.gender %></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="text-center mt-4 mb-3">History Game</h4>
+      <table class="table table-striped">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Time</th>
+            <th scope="col">Score</th>
+            <th scope="col">CreatedAt</th>
+            <th scope="col">UpdatedAt</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for(var i=0; i < data.UserGameHistories.length; i++) { %>
+          <tr>
+            <td><%= data.UserGameHistories[i].id %></td>
+            <td><%= data.UserGameHistories[i].time %></td>
+            <td><%= data.UserGameHistories[i].score %></td>
+            <td><%= data.UserGameHistories[i].createdAt %></td>
+            <td><%= data.UserGameHistories[i].updatedAt %></td>
+          </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Link javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>

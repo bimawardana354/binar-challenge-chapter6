@@ -1,0 +1,281 @@
+/* ------------------- RESPONSIF ------------------- */
+
+/* desktop + */
+@media only screen and (min-width: 901px) and (max-width: 1023px) {
+  .text-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    width: 500px;
+  }
+  .col-carousel {
+    width: 700px;
+  }
+  .carousel-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+  }
+  .carousel-inner img {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    align-items: center;
+    float: left;
+  }
+  .top-scores-left-text {
+    margin-bottom: 50%;
+  }
+  .p-top-scores {
+    margin-bottom: 30px;
+  }
+  .card-top-scores {
+    margin-left: 50px;
+    margin-bottom: -120px;
+  }
+  .img-subs {
+    width: 60%;
+    height: 80%;
+  }
+  .text-subs {
+    margin-top: 10px;
+  }
+  .footer-div {
+    margin-top: 10%;
+  }
+  .btn-playnow {
+    margin-bottom: 70%;
+  }
+}
+
+/* desktop ++ */
+@media only screen and (min-width: 1023px) and (max-width: 1080px) {
+  .btn-playnow {
+    margin-bottom: 80%;
+  }
+}
+
+/* tablets */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .text-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    width: 500px;
+  }
+  .btn-playnow {
+    margin-bottom: 70%;
+  }
+  .col-carousel {
+    width: 640px;
+    margin-right: -5%;
+  }
+  .carousel-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+    margin-right: 25px;
+  }
+  .carousel-inner img {
+    width: 460px;
+    height: 300px;
+    position: relative;
+    align-items: center;
+    float: left;
+  }
+  .all-features {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 170px;
+    width: 100%;
+    float: left;
+  }
+  .text-description {
+    position: relative;
+    width: 350px;
+  }
+  .top-scores-left-text {
+    margin-bottom: -150px;
+  }
+  .p-top-scores {
+    margin-bottom: 25px;
+  }
+  .card-top-scores {
+    margin-top: 200px;
+    margin-bottom: -120px;
+  }
+  .img-subs {
+    width: 60%;
+    height: 80%;
+  }
+  .h1-subs {
+    font-size: 40px;
+  }
+  .text-subs {
+    margin-top: 100px;
+  }
+  .btn-subs {
+    width: 100%;
+  }
+  .footer-div {
+    margin-top: 10%;
+  }
+}
+
+/* tablets + */
+@media only screen and (min-width: 767px) and (max-width: 900px) {
+  .col-carousel {
+    width: 700px;
+    margin-right: -5%;
+  }
+  .btn-playnow {
+    margin-bottom: 70%;
+  }
+  .carousel-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+    margin-right: 25px;
+  }
+  .carousel-inner img {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    align-items: center;
+    float: left;
+  }
+  .div-topscores-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: -23%;
+    width: 200px;
+  }
+  .top-scores-left-text {
+    margin-top: -90%;
+    width: 500px;
+  }
+  .p-top-scores {
+    margin-bottom: 30px;
+  }
+  .card-top-scores {
+    margin-top: 350px;
+    margin-left: 120px;
+  }
+}
+
+/* phone */
+@media only screen and (max-width: 599px) {
+  .text-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    width: 500px;
+  }
+  .btn-playnow {
+    margin-bottom: 50%;
+  }
+  .col-carousel {
+    width: 600px;
+    margin-right: -5%;
+  }
+  .carousel-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+    margin-right: 5px;
+  }
+  .carousel-inner img {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    align-items: center;
+    float: left;
+  }
+  .all-features {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 170px;
+    width: 100%;
+    float: left;
+  }
+  .h1-features {
+    text-align: left;
+    margin-left: -40%;
+  }
+  .h3-features {
+    text-align: left;
+    margin-left: -40%;
+  }
+  .text-description {
+    position: relative;
+    width: 350px;
+  }
+  .top-scores-left-text {
+    margin-bottom: 5%;
+    margin-top: -10px;
+  }
+  .p-top-scores {
+    margin-bottom: 20px;
+  }
+  .card-top-scores {
+    margin-bottom: -100px;
+  }
+  .img-subs {
+    width: 60%;
+    height: 80%;
+  }
+  .h1-subs {
+    font-size: 30px;
+  }
+  .btn-subs {
+    width: 100%;
+  }
+  .text-subs {
+    margin-top: 100px;
+  }
+  .footer-div {
+    margin-top: 10%;
+  }
+}
+
+/* phone + */
+@media only screen and (min-width: 300px) and (max-width: 555px) {
+  .col-carousel {
+    width: 400px;
+    margin-right: 30px;
+  }
+  .btn-playnow {
+    margin-bottom: 50%;
+  }
+  .carousel-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+    margin-right: 5px;
+  }
+  .carousel-inner img {
+    width: 300px;
+    height: 180px;
+    position: relative;
+    align-items: center;
+  }
+}
